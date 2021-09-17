@@ -6,7 +6,7 @@
 
 ### 1.1 许可证
 
-本软件包遵循 Apache 2.0 许可，详见 `LICENSE` 文件。
+详见 `license.txt` 文件。
 
 ### 1.2 依赖
 
@@ -18,8 +18,8 @@
 
 ```c
 RT-Thread online packages
-    system packages --->
-    
+    multimedia packages  --->
+        [*] uGUI:Open source graphics library ugui ported to rtthread. --->
 ```
 
 ## 3 使用说明
