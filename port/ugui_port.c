@@ -124,7 +124,7 @@ void lcd_draw_pixel(UG_S16 x, UG_S16 y, UG_COLOR pixel)
         return;
     }
 
-    addr = (x - 1) * 2 + (y - 1) * lcd_w * 2;
+    addr = (x) * 2 + (y) * lcd_w * 2;
 
     r = ((pixel >> 16) & 0xFF);
     g = ((pixel >>  8) & 0xFF);
@@ -168,7 +168,7 @@ UG_COLOR lcd_read_pixel(UG_S16 x, UG_S16 y)
     {
         return pixel;
     }
-    addr = (x - 1) * 2 + (y - 1) * lcd_w * 2;
+    addr = (x) * 2 + (y) * lcd_w * 2;
     color = ((lcd_fb[addr + 0] << 0) | (lcd_fb[addr + 1] << 8));
     
     r = ((((color & 0xF800) >> 11) << 3) & 0xFF);

@@ -19,6 +19,6 @@ path += [cwd + '/widgets']
 
 LOCAL_CCFLAGS = ''
 
-group = DefineGroup('ugui', src, depend = [''], CPPPATH = path, LOCAL_CCFLAGS = LOCAL_CCFLAGS)
+group = DefineGroup('ugui', src, depend = ['PKG_USING_UGUI'], CPPPATH = path, LOCAL_CCFLAGS = LOCAL_CCFLAGS)
 
 Return('group')
